@@ -38,8 +38,8 @@ public class EmployeeController {
     
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public void addEmployee(@RequestBody Employee employee) {
-        employeeMapper.addEmployee(employee);
+    public void updateEmployee(@RequestBody Employee employee) {
+        employeeMapper.updateEmployee(employee);
     }
     
     @PostMapping()
